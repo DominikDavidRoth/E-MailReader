@@ -16,10 +16,9 @@ public class TrigerTimmer
 
     private void setTimer()
     {
-        //DateTime today = DateTime.Now;
-        //DateTime tomorrow = DateTime.Today.AddDays(1);
-        //waitingtime = (tomorrow - today).TotalMilliseconds;
-        waitingtime = 15000;
+        DateTime today = DateTime.Now;
+        DateTime tomorrow = DateTime.Today.AddDays(1);
+        waitingtime = (tomorrow - today).TotalMilliseconds;
     }
     private void OnTimedEvent(object source, ElapsedEventArgs e)
     {
